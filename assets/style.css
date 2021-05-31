@@ -1,0 +1,186 @@
+/* Font Include */
+@import url('https://fonts.googleapis.com/css2?family=Langar&family=Rajdhani:wght@600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.button-content {
+    display: flex;
+    height: 65vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0;
+    font-size: 25px;
+    margin-top: -30px;
+    text-align: center;
+}
+
+h1, 
+p {
+    font-family: 'Langar', cursive;
+}
+
+/* Responsive */
+@media only screen and (min-width: 576px) {
+    h1 {
+        margin-top: 75px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    body {
+        overflow: hidden;
+    }
+    
+    .button-content {
+        height: 75vh;
+        padding-top: 100px;
+        padding-bottom: 25px;
+    }
+    
+    .button-content .row {
+        padding-top: 930px;
+        padding-bottom: 0;
+    }
+    
+    h1 {
+        font-size: 50px;
+    }
+}
+
+.btn {
+    color: #000;
+    font-size: 50px;
+    margin: 40px 60px;
+    padding: 15px 40px;
+    border-radius: 5px;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s ease 0s;
+}
+
+.btn:hover::after {
+    width: 100%;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.primary {
+    border: 4px solid #0d6efd;
+    color: #0d6efd;
+}
+
+.primary::after {
+    background-color: #0d6efd;
+}
+
+.secondary {
+    border: 4px solid #6c757d;
+    color: #6c757d;
+}
+
+.secondary::after {
+    background-color: #6c757d;
+}
+
+.success {
+    border: 4px solid #198754;
+    color: #198754;
+}
+
+.success::after {
+    background-color: #198754;
+}
+
+.danger {
+    border: 4px solid #dc3545;
+    color: #dc3545;
+}
+
+.danger::after {
+    background-color: #dc3545;
+}
+
+.warning {
+    border: 4px solid #ffc107;
+    color: #ffc107;
+}
+
+.warning::after {
+    background-color: #ffc107;
+}
+
+.info {
+    border: 4px solid #0dcaf0;
+    color: #0dcaf0;
+}
+
+.info::after {
+    background-color: #0dcaf0;
+}
+
+.light {
+    border: 4px solid #f8f9fa;
+    color: #f8f9fa;
+}
+
+.light::after {
+    background-color: #f8f9fa;
+}
+
+.dark {
+    border: 4px solid #212529;
+    color: #212529;
+}
+
+.dark::after {
+    background-color: #212529;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
